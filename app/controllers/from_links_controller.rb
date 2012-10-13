@@ -8,7 +8,8 @@ class FromLinksController < ApplicationController
       to_link.frequency += 1
       if to_link.save
         next_link = FromLink.find_by_url(params[:from_link][:to_link])
-        render json: next_link.to_json(include: [:to_links])
+        #render json: next_link.to_json(include: [:to_links])
+        render json: "success".to_json
       else
         render json: to_link.errors, status: :unprocessable_entity
       end
