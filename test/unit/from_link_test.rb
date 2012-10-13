@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class EdgesControllerTest < ActionController::TestCase
+class FromLinkTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

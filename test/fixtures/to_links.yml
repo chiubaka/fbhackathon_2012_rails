@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  from: MyString
-  to: MyText
+  url: MyString
+  frequency: 1
+  from_link_id: 1
 
 two:
-  from: MyString
-  to: MyText
+  url: MyString
+  frequency: 1
+  from_link_id: 1

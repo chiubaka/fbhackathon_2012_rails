@@ -1,2 +1,0 @@
-class EdgesController < ApplicationController
-end

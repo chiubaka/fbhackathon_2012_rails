@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class EdgeTest < ActiveSupport::TestCase
+class ToLinkTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

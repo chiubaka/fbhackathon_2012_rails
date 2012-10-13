@@ -11,13 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121013030611) do
+ActiveRecord::Schema.define(:version => 20121013033318) do
 
-  create_table "edges", :force => true do |t|
-    t.string   "from"
-    t.text     "to"
+  create_table "from_links", :force => true do |t|
+    t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "to_links", :force => true do |t|
+    t.string   "url"
+    t.integer  "frequency",    :default => 0
+    t.integer  "from_link_id"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
   end
 
 end
